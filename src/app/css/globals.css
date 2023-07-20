@@ -1,3 +1,7 @@
 :root {
   --some-var: 1100px;
 }
+
+body {
+  width: 100%;
+}

@@ -1,5 +1,6 @@
 "use client"
 import { ChangeEvent, useState } from "react";
+import styles from "@/app/shared/components/css/sidebar.module.css";
 
 export function Search() {
   const [ search, setSearch ] = useState('')
@@ -10,7 +11,7 @@ export function Search() {
 
   return (
     <>
-      <input placeholder="search"
+      <input className={styles.search} placeholder="search"
              value={search}
              onChange={handleSearchUpdate}/>
     </>

@@ -4,6 +4,8 @@ import 'normalize.css/normalize.css'
 import type {Metadata} from 'next'
 import {Roboto} from 'next/font/google'
 import { Sidebar } from "@/app/shared/components/Sidebar";
+import { Search } from "@/app/shared/components/Search";
+import { Panel } from "@/app/shared/components/Panel";
 
 const robotoFont = Roboto({weight: ["300", "500", "700"], subsets: ['latin']})
 
@@ -21,6 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={robotoFont.className}>
         <Sidebar />
+        <Panel />
         <div className={styles.view}>
           {children}
         </div>
